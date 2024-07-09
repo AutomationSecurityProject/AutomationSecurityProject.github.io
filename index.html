@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anais's Security Automation Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Anais's Security Automation Project</h1>
+        <button class="button" id="loginButton">Login</button>
+        <button class="button" id="signupButton">Sign Up</button>
+    </div>
+</body>
+</html>
+
+<!-- Security added:
+    1. Escape Output to prevent XSS
+    2. Secure links to the login/signup pages
+-->

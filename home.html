@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-eval'; img-src 'self' data:;">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <button class="button" id="redirectGenerateButton">I feel lucky</button>
+        <h3>OR</h3>
+        <h2>Upload up to 3 Images</h2>
+        <div id="dropArea" class="drop-area">
+            <p>Drag & Drop Images Here</p>
+            <input type="file" id="fileInput" accept="image/*" hidden multiple>
+            <button id="fileButton">Or select images</button>
+        </div>
+        <div id="imageGrid" class="image-grid"></div>
+        <button class="button" id="logoutButton">Logout</button>
+    </div>
+</body>
+</html>
